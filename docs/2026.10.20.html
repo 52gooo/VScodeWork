@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单的应用</title>
+</head>
+<body>
+    <form action="" method="post">
+        <table>
+            <caption>青春不常在，抓紧谈恋爱</caption>
+            <tr>
+                <td><span>姓名</span></td>
+                <td><input type="text" placeholder="请输入真实姓名"></td>
+            </tr>
+            <tr>
+                <td><span>性别</span></td>
+                <td><input type="radio" name="xb">男 <input type="radio" name="xb">女</td>
+            </tr>
+            <tr>
+                <td><span>出生日期</span></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><span>常住地</span></td>
+                <td><select>
+                    <option>北京</option>
+                    <option>上海</option>
+                    <option>广州</option>
+                    <option>深圳</option>
+                    <option>其他</option>
+                </select></td>
+ 
+            </tr>
+            <tr>
+                <td><span>学历</span></td>
+                <td><select >
+                    <option>小学</option>
+                    <option>高中</option>
+                    <option>大专</option>
+                    <option>本科</option>
+                    <option>研究生</option>
+                    <option>博士</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><span>手机号码</span></td>
+                <td><input type="tel" placeholder="请输入手机号码" pattern="^1[3-9]\d{9}$"></td>
+            </tr>
+            <tr>
+                <td><span>邮箱</span></td>
+                <td><input type="email" placeholder="请输入邮箱"></td>
+            </tr>
+            <tr>
+                <td><span>创建密码</span></td>
+                <td><input type="password" placeholder="请输入密码"></td>
+            </tr>                
+            <tr>
+                <td><span>确认密码</span></td>
+                <td><input type="password" placeholder="请再次输入密码"></td>
+            </tr>
+            <tr>
+                <td><span>兴趣爱好</span></td>
+                <td><input type="checkbox" name="xh">唱歌 <input type="checkbox" name="xh">跳舞 <input type="checkbox" name="xh">旅游 <input type="checkbox" name="xh">运动</td>
+            </tr>
+            <tr>
+                <td><span>自我介绍</span></td>
+                <td><textarea placeholder="请输入自我介绍"></textarea></td>
+            </tr>
+            <tr>
+                <td><span>喜欢的颜色</span></td>
+                <td><textarea placeholder="请输入喜欢的颜色"></textarea></td>
+            </tr> 
+            <tr>
+                <td><span>照片</span></td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>   
+                <td colspan="2" align="center">
+                    <input type="submit" value="提交">
+                                                                           
+            </td>
+            </tr>
+            <!-- 注册 -->
+           <tr>   
+                <td colspan="2" align="center">
+                    <input type="submit" value="注册">                            
+            </td>
+            </tr>
+
+
+
+            </table>
+    </form>
+</body>
+</html>

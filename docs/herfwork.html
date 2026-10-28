@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>学习超链接（a 标签）</h1>
+
+    <!--
+        1. a 标签：超链接标签
+        2. href 属性：指定跳转目标地址
+        3. target 属性：控制在新窗口或当前窗口打开
+        4. title 属性：鼠标悬停时显示提示文本
+        5. 常见用途：跳转网页、邮箱、电话、锚点等
+    -->
+
+    <h2>1. 普通网页跳转</h2>
+    <a href="https://www.baidu.com" target="_blank" title="打开百度首页">点击我跳转到百度</a>
+
+    <h2>2. 站内页面跳转</h2>
+    <a href="index.html">跳转到首页</a>
+
+    <h2>3. 邮件链接</h2>
+    <a href="mailto:example@qq.com">发送邮件</a>
+
+    <h2>4. 电话链接</h2>
+    <a href="tel:13888888888">拨打电话</a>
+
+    <h2>5. 锚点链接</h2>
+    <!--
+        通过 id 实现页面内跳转
+        href="#目标id" 表示跳转到当前页面中的某个位置
+    -->
+    <a href="#bottom">跳到页面底部</a>
+
+    <div style="height: 1000px; background: #f4f4f4; margin: 20px 0;">
+        这是中间内容区域，用来演示页面滚动效果。
+    </div>
+
+    <p id="bottom">这里是页面底部，说明锚点跳转成功了。</p>
+
+    <h2>6. 代码说明</h2>
+    <!--
+        基础语法：
+        <a href="目标地址" target="_blank" title="提示文字">链接文字</a>
+
+        href：要跳转的地址
+        target="_blank"：新窗口打开
+        target="_self"：当前窗口打开（默认值）
+        title：鼠标悬停显示的提示信息
+    -->
+
+    <pre>
+&lt;a href="https://www.baidu.com" target="_blank" title="打开百度首页"&gt;点击我跳转到百度&lt;/a&gt;
+    </pre>
+
+    <h2>7. 练习：自己写一个超链接</h2>
+    <a href="https://www.taobao.com" target="_blank">淘宝网</a>
+</body>
+</html>

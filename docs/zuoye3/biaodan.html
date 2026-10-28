@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+        .A1{
+            padding: 16px;
+            border: 13px solid #f1f1f1;
+            
+        }
+        .A {
+            margin: 0 auto;
+            padding: 16px;
+         
+            background-color: #f0f8fc;
+        }
+
+        .B {
+            height: 52px;
+            padding: 0 10px;
+            border-bottom: 4px solid white;
+            color: #064fd0;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 52px;
+        }
+
+        .B table {
+            height: 100%;
+            color: inherit;
+            font-size: inherit;
+        }
+
+        .C {
+            float: right;
+            margin-right: 17%;
+            font-size: 18px;
+        }
+
+        .D {
+            width: 82%;
+            margin: 8px auto 14px;
+        }
+
+        .E {
+            color: red;
+            font-size: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #138451;
+            font-size: 18px;
+        }
+
+        td {
+            height: 40px;
+            padding: 2px;
+            border: 2px solid white;
+        }
+
+        .F {
+            width: 165px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            height: 28px;
+            padding: 2px 5px;
+            border: 2px solid #c8c8c8;
+            font-size: 16px;
+        }
+
+        .G {
+            width: 140px;
+        }
+
+        .H {
+            width: 540px;
+            max-width: 90%;
+        }
+
+        .I {
+            color: red;
+        }
+
+        .I label {
+            margin: 0 6px;
+        }
+
+        select {
+            width: 80px;
+            height: 30px;
+            margin-left: 8px;
+            font-size: 16px;
+        }
+
+        textarea {
+            width: 540px;
+            max-width: 90%;
+            height: 145px;
+            border: 2px solid #c8c8c8;
+            font-size: 16px;
+        }
+
+        .J {
+            height: 68px;
+            color: blue;
+            font-size: 18px;
+        }
+
+        .K {
+            height: 42px;
+            text-align: center;
+        }
+
+        button {
+            margin: 0 18px;
+            padding: 3px 12px;
+            font-size: 18px;
+        }
+
+        .L {
+            height: 88px;
+            color: blue;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="A1">
+        <div class="A">
+            <div class="B">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="33%">留言板</td>
+                        <td><span class="C">科技工作者建言</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="D">
+                <form>
+                    <table width="80%" align="center" border="0" cellspacing="0" cellpadding="2">
+                        <tr>
+                            <td class="E" colspan="2"><font color="red">发表留言</font></td>
+                        </tr>
+                        <tr>
+                            <td class="F" width="115">姓&nbsp;&nbsp;名：</td>
+                            <td><input class="G" type="text" name="name" size="14"></td>
+                        </tr>
+                        <tr>
+                            <td class="F">电子邮件：</td>
+                            <td><input class="H" type="email" name="email" size="60"></td>
+                        </tr>
+                        <tr>
+                            <td class="F">分&nbsp;&nbsp;类：</td>
+                            <td class="I">
+                                <font color="red">科技工作者建言
+                                    <label><input type="radio" name="privacy" value="public">不保密</label>
+                                    <label><input type="radio" name="privacy" value="private">保密</label>
+                                    留言类型：
+                                    <select name="type">
+                                        <option value=""></option>
+                                        <option value="suggestion">建议</option>
+                                        <option value="question">咨询</option>
+                                        <option value="other">其他</option>
+                                    </select>
+                                </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="F">留&nbsp;&nbsp;言：</td>
+                            <td><textarea name="message" cols="55" rows="8"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="J" colspan="2">
+                                注：如果您的留言不便公开，请选择“保密”选项，提交后可凭系统反馈给您的留言编号、查询密码和您的姓名查询回复。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="K" colspan="2" align="center">
+                                <button type="submit">提交</button>
+                                <button type="reset">清空</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="L" colspan="2">
+                                <ul>
+                                    <li>请遵守国家有关法律、法规，尊重网上道德，承担一切因您的行为而直接或间接引起的法律责任。</li>
+                                    <li>本网站拥有管理笔名和留言的一切权利。</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
